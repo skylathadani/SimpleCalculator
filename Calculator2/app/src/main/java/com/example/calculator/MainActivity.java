@@ -24,6 +24,14 @@ public class MainActivity extends AppCompatActivity {
     private double data1 = 0, data2 = 0;
     private Operator optr = Operator.none;
 
+
+
+    public void btn00Click(View view){
+        TextView eText = (TextView)findViewById(R.id.resultEdit);
+        eText.setText(eText.getText()+"0");
+    }
+
+
     public void btn01Click(View view){
         TextView eText = (TextView)findViewById(R.id.resultEdit);
         eText.setText(eText.getText()+"1");
