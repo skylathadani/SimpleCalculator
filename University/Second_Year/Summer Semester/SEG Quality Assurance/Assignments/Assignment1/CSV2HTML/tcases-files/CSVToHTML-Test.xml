@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<TestCases system="CSVToHTML">
+  <Function name="csv2html">
+    <TestCase id="0">
+      <Has name="properties" value="good,validIN"/>
+      <Input type="arg">
+        <Var name="infilename" value="validPathCSV"/>
+        <Var name="outfilename" value="validPathHTML"/>
+        <Var name="encoding" value="validCharsetInput"/>
+        <Var name="cssClasses" value="StringArrayValidCols"/>
+        <Var name="completeHTML" value="HTMLGeneratedTrue"/>
+        <Var name="header" value="TableHeadingFirstLineTrue"/>
+      </Input>
+    </TestCase>
+    <TestCase id="1">
+      <Has name="properties" value="good,validIN"/>
+      <Input type="arg">
+        <Var name="infilename" value="validPathCSV"/>
+        <Var name="outfilename" value="validPathHTML"/>
+        <Var name="encoding" value="nullValue"/>
+        <Var name="cssClasses" value="StringArrayValidCols"/>
+        <Var name="completeHTML" value="TableElementOnlyFalse"/>
+        <Var name="header" value="NoTableHeadingFalse"/>
+      </Input>
+    </TestCase>
+    <TestCase id="2" failure="true">
+      <Has name="properties" value="good,validIN"/>
+      <Input type="arg">
+        <Var name="infilename" value="validPathNoCSV" failure="true"/>
+        <Var name="outfilename" value="validPathHTML"/>
+        <Var name="encoding" value="validCharsetInput"/>
+        <Var name="cssClasses" value="StringArrayValidCols"/>
+        <Var name="completeHTML" value="TableElementOnlyFalse"/>
+        <Var name="header" value="TableHeadingFirstLineTrue"/>
+      </Input>
+    </TestCase>
+    <TestCase id="3" failure="true">
+      <Has name="properties" value="good,validIN"/>
+      <Input type="arg">
+        <Var name="infilename" value="invalidPath" failure="true"/>
+        <Var name="outfilename" value="validPathHTML"/>
+        <Var name="encoding" value="nullValue"/>
+        <Var name="cssClasses" value="StringArrayValidCols"/>
+        <Var name="completeHTML" value="HTMLGeneratedTrue"/>
+        <Var name="header" value="NoTableHeadingFalse"/>
+      </Input>
+    </TestCase>
+    <TestCase id="4" failure="true">
+      <Has name="properties" value="good,validIN"/>
+      <Input type="arg">
+        <Var name="infilename" value="validPathCSV"/>
+        <Var name="outfilename" value="validPathNoHTML" failure="true"/>
+        <Var name="encoding" value="validCharsetInput"/>
+        <Var name="cssClasses" value="StringArrayValidCols"/>
+        <Var name="completeHTML" value="HTMLGeneratedTrue"/>
+        <Var name="header" value="TableHeadingFirstLineTrue"/>
+      </Input>
+    </TestCase>
+    <TestCase id="5" failure="true">
+      <Has name="properties" value="good,validIN"/>
+      <Input type="arg">
+        <Var name="infilename" value="validPathCSV"/>
+        <Var name="outfilename" value="invalidPath" failure="true"/>
+        <Var name="encoding" value="validCharsetInput"/>
+        <Var name="cssClasses" value="StringArrayValidCols"/>
+        <Var name="completeHTML" value="TableElementOnlyFalse"/>
+        <Var name="header" value="NoTableHeadingFalse"/>
+      </Input>
+    </TestCase>
+    <TestCase id="6">
+      <Has name="properties" value="good,validIN"/>
+      <Input type="arg">
+        <Var name="infilename" value="validPathCSV"/>
+        <Var name="outfilename" value="validPathHTML"/>
+        <Var name="encoding" value="nullValue"/>
+        <Var name="cssClasses" value="StringArrayValidCols"/>
+        <Var name="completeHTML" value="HTMLGeneratedTrue"/>
+        <Var name="header" value="TableHeadingFirstLineTrue"/>
+      </Input>
+    </TestCase>
+    <TestCase id="7" failure="true">
+      <Has name="properties" value="validIN"/>
+      <Input type="arg">
+        <Var name="infilename" value="validPathCSV"/>
+        <Var name="outfilename" value="validPathHTML"/>
+        <Var name="encoding" value="nullValue"/>
+        <Var name="cssClasses" value="StringArrayInvalidCols" failure="true"/>
+        <Var name="completeHTML" value="TableElementOnlyFalse"/>
+        <Var name="header" value="TableHeadingFirstLineTrue"/>
+      </Input>
+    </TestCase>
+    <TestCase id="8" failure="true">
+      <Has name="properties" value="validIN"/>
+      <Input type="arg">
+        <Var name="infilename" value="validPathCSV"/>
+        <Var name="outfilename" value="validPathHTML"/>
+        <Var name="encoding" value="validCharsetInput"/>
+        <Var name="cssClasses" value="invalidArray" failure="true"/>
+        <Var name="completeHTML" value="TableElementOnlyFalse"/>
+        <Var name="header" value="NoTableHeadingFalse"/>
+      </Input>
+    </TestCase>
+    <TestCase id="9">
+      <Has name="properties" value="good,validIN"/>
+      <Input type="arg">
+        <Var name="infilename" value="validPathCSV"/>
+        <Var name="outfilename" value="validPathHTML"/>
+        <Var name="encoding" value="validCharsetInput"/>
+        <Var name="cssClasses" value="StringArrayValidCols"/>
+        <Var name="completeHTML" value="TableElementOnlyFalse"/>
+        <Var name="header" value="NoTableHeadingFalse"/>
+      </Input>
+    </TestCase>
+    <TestCase id="10">
+      <Has name="properties" value="good,validIN"/>
+      <Input type="arg">
+        <Var name="infilename" value="validPathCSV"/>
+        <Var name="outfilename" value="validPathHTML"/>
+        <Var name="encoding" value="nullValue"/>
+        <Var name="cssClasses" value="StringArrayValidCols"/>
+        <Var name="completeHTML" value="HTMLGeneratedTrue"/>
+        <Var name="header" value="TableHeadingFirstLineTrue"/>
+      </Input>
+    </TestCase>
+    <TestCase id="11">
+      <Has name="properties" value="good,validIN"/>
+      <Input type="arg">
+        <Var name="infilename" value="validPathCSV"/>
+        <Var name="outfilename" value="validPathHTML"/>
+        <Var name="encoding" value="nullValue"/>
+        <Var name="cssClasses" value="StringArrayValidCols"/>
+        <Var name="completeHTML" value="TableElementOnlyFalse"/>
+        <Var name="header" value="NoTableHeadingFalse"/>
+      </Input>
+    </TestCase>
+    <TestCase id="12">
+      <Has name="properties" value="good,validIN"/>
+      <Input type="arg">
+        <Var name="infilename" value="validPathCSV"/>
+        <Var name="outfilename" value="validPathHTML"/>
+        <Var name="encoding" value="validCharsetInput"/>
+        <Var name="cssClasses" value="StringArrayValidCols"/>
+        <Var name="completeHTML" value="HTMLGeneratedTrue"/>
+        <Var name="header" value="NoTableHeadingFalse"/>
+      </Input>
+    </TestCase>
+    <TestCase id="13">
+      <Has name="properties" value="good,validIN"/>
+      <Input type="arg">
+        <Var name="infilename" value="validPathCSV"/>
+        <Var name="outfilename" value="validPathHTML"/>
+        <Var name="encoding" value="nullValue"/>
+        <Var name="cssClasses" value="StringArrayValidCols"/>
+        <Var name="completeHTML" value="TableElementOnlyFalse"/>
+        <Var name="header" value="TableHeadingFirstLineTrue"/>
+      </Input>
+    </TestCase>
+    <TestCase id="14" failure="true">
+      <Has name="properties" value="good,validIN"/>
+      <Input type="arg">
+        <Var name="infilename" value="validPathCSV"/>
+        <Var name="outfilename" value="validPathHTML"/>
+        <Var name="encoding" value="invalidCharset" failure="true"/>
+        <Var name="cssClasses" value="StringArrayValidCols"/>
+        <Var name="completeHTML" value="HTMLGeneratedTrue"/>
+        <Var name="header" value="NoTableHeadingFalse"/>
+      </Input>
+    </TestCase>
+  </Function>
+</TestCases>

@@ -1,0 +1,46 @@
+<System name="CSVToHTML">
+
+	<Function name="csv2html">
+
+		<Input type="arg">
+
+			<Var name="infilename">
+				<Value name="validPathCSV" property = "validIN"/>
+				<Value name="validPathNoCSV" failure="true"/>
+				<Value name="invalidPath" failure="true"/>
+			</Var>
+		
+			
+
+			<Var name="outfilename">
+				<Value name="validPathHTML" property = "validIN"/>
+				<Value name="validPathNoHTML" failure="true"/>
+				<Value name="invalidPath" failure="true"/>
+			</Var>
+			
+
+			<Var name="encoding">
+				<Value name="validCharsetInput"/>
+				<Value name="invalidCharset" failure="true"/>
+				<Value name="nullValue"/>
+			</Var>
+
+			<Var name="cssClasses">
+				<Value name="StringArrayValidCols" property="good"/>
+				<Value name="StringArrayInvalidCols" failure="true"/>
+				<Value name="invalidArray" failure="true"/>
+			</Var>
+
+			<Var name="completeHTML">
+				<Value name="HTMLGeneratedTrue" when="good"/>
+				<Value name="TableElementOnlyFalse"/>
+			</Var>
+
+			<Var name="header">
+				<Value name="TableHeadingFirstLineTrue"/>
+				<Value name="NoTableHeadingFalse"/>
+			</Var>
+
+		</Input>
+	</Function>
+</System>
